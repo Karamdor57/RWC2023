@@ -52,7 +52,7 @@ const generateGame = () => {
         throw new Error("The dimension of the board must be an even number.")
     }
     
-    const emojis = ['<img src="../rugbylogo/Fiji_Rugby.png" alt="">','<img src="../rugbylogo/Afrique_du_sud_logo_Rugby.png" alt="">','<img src="../rugbylogo/Angleterre_Rugby.png" alt="">','<img src="../rugbylogo/Argentine_Rugby.png" alt="">','<img src="../rugbylogo/Chilie_Rugby.png" alt="">','<img src="../rugbylogo/Scottish_Rugby.png" alt="">','<img src="../rugbylogo/France_Rugby.png" alt="">','<img src="../rugbylogo/Irish_Rugby.png" alt="">','<img src="../rugbylogo/Italie_Rugby.png" alt="">','<img src="../rugbylogo/Japon_Rugby.png" alt="">','<img src="../rugbylogo/Nouvelle-Zelande_Rugby.png" alt="">',]
+    const emojis = ['<img src="../RWC2023/rugbylogo/Fiji_Rugby.png" alt="">','<img src="../RWC2023/rugbylogo/Afrique_du_sud_logo_Rugby.png" alt="">','<img src="../RWC2023/rugbylogo/Angleterre_Rugby.png" alt="">','<img src="../RWC2023/rugbylogo/Argentine_Rugby.png" alt="">','<img src="../RWC2023/rugbylogo/Chilie_Rugby.png" alt="">','<img src="../RWC2023/rugbylogo/Scottish_Rugby.png" alt="">','<img src="../RWC2023/rugbylogo/France_Rugby.png" alt="">','<img src="../RWC2023/rugbylogo/Irish_Rugby.png" alt="">','<img src="../RWC2023/rugbylogo/Italie_Rugby.png" alt="">','<img src="../RWC2023/rugbylogo/Japon_Rugby.png" alt="">','<img src="../RWC2023/rugbylogo/Nouvelle-Zelande_Rugby.png" alt="">',]
     const picks = pickRandom(emojis, (dimensions * dimensions) / 2) 
     const items = shuffle([...picks, ...picks])
     const cards = `
